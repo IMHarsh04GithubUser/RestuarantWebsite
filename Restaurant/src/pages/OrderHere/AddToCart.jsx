@@ -19,7 +19,7 @@ const AddToCart = () => {
       return;
     }
 
-    axios.post('http://localhost:3000/cartbill', { cart, address, totalAmount,email })
+    axios.post('https://restuarant-website-back.vercel.app/cartbill', { cart, address, totalAmount,email })
       .then(result => {
         if (result.status === 201) {
           toast.success('Order placed successfully- Cash On Delivery');
