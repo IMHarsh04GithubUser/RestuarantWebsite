@@ -24,7 +24,7 @@ const AccountDisplay = () => {
     }
 
     axios
-      .post("http://localhost:3000/login", { img, email, password })
+      .post("https://restuarant-website-back.vercel.app/login", { img, email, password })
       .then((result) => {
         console.log(result);
           navigate('/about')
