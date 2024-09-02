@@ -22,7 +22,7 @@ const FormContainer = () => {
       
     }
 
-    axios.post('https://restuarant-website-back.vercel.app//booking',{name,phone,email,date,time,persons})
+    axios.post('https://restuarant-website-back.vercel.app/booking',{name,phone,email,date,time,persons})
     .then((result)=>{console.log(result)
       alert(`Congratulations Your Seat Booked for ${date}`)
       navigate('/')
