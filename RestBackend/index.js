@@ -17,14 +17,12 @@ const bodyParser = require("body-parser");
 const app = express();
 app.use(express.json());
 
-app.use(cors(
-  {
-  origin: 'https://gourmat-garden.vercel.app/',
+app.use(cors({
+  origin: 'https://gourmat-garden.vercel.app',
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
-  credentials:true,
-  }
-)); 
+  
+}));
 
 app.use(bodyParser.json());
 // MongoDB Connection
