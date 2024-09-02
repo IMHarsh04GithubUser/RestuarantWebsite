@@ -16,7 +16,13 @@ const bodyParser = require("body-parser");
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors(
+  {
+    origin:["https://restuarant-website-back.vercel.app/"],
+    methods:["POST","GET"],
+    credentials:true
+  }
+));
 app.use(bodyParser.json());
 // MongoDB Connection
 mongoose
