@@ -18,7 +18,7 @@ const app = express();
 app.use(express.json());
 app.use(cors(
   {
-    origin:["https://restuarant-website-back.vercel.app/"],
+    origin:["https://gourmatgarden-restaurant.vercel.app/"],
     methods:["POST","GET"],
     credentials:true
   }
